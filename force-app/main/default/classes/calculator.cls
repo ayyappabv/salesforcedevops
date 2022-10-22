@@ -4,6 +4,7 @@
 /***************************************************************************/
 
 public with sharing class calculator {
+    //base method calculator will call other methods like add, substract, multiply,etc.
     public calculator() {
 
     }
