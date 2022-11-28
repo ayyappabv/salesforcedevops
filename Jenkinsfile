@@ -8,7 +8,7 @@ node {
 
     def HUB_ORG='ayyappabvth@salesforce.com'
     def SFDC_HOST = 'https://login.salesforce.com'
-    def JWT_KEY_CRED_ID ='/Users/ayyappabv/openssl/server.key'
+    def JWT_KEY_CRED_ID =`/Users/ayyappabv/openssl/server.key`
     def CONNECTED_APP_CONSUMER_KEY='3MVG9d8..z.hDcPJ2Zy6STgzmim8YaXJFAJ_Ax4m0deAq1SeYo.XOe8t7oboN6hhNHcEpbJ7GOeAY4qFtaOR3'
 
     println 'Ayyappa B V'
@@ -27,7 +27,7 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
             if (isUnix()) {
-                rc = sh returnStatus: true, script: "${toolbelt} auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+                rc = sh returnStatus: true, script: "${toolbelt} auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile /Users/ayyappabv/openssl/server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }else{
 		    //bat "${toolbelt} plugins:install salesforcedx@49.5.0"
 		    bat "${toolbelt} update"
