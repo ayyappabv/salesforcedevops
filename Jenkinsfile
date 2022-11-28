@@ -8,7 +8,7 @@ node {
 
     def HUB_ORG='ayyappabvth@salesforce.com'
     def SFDC_HOST = 'https://login.salesforce.com'
-    def JWT_KEY_CRED_ID =/Users/ayyappabv/openssl/server.key
+    def JWT_KEY_CRED_ID ='/Users/ayyappabv/openssl/server.key'
     def CONNECTED_APP_CONSUMER_KEY='3MVG9d8..z.hDcPJ2Zy6STgzmim8YaXJFAJ_Ax4m0deAq1SeYo.XOe8t7oboN6hhNHcEpbJ7GOeAY4qFtaOR3'
 
     println 'Ayyappa B V'
