@@ -10,6 +10,11 @@ node {
    /* def SFDC_HOST = '' */
    /* def JWT_KEY_CRED_ID ='45e2e7b2-665f-4244-967f-7d6cd4593ca8' */
    /* def CONNECTED_APP_CONSUMER_KEY='' */
+	
+     HUB_ORG=env.HUB_ORG_DH
+     SFDC_HOST=env.SFDC_HOST_DH
+     JWT_KEY_CRED_ID=env.JWT_KEY_CRED_ID
+	
 
     println 'Ayyappa B V'
     println 'KEY IS' 
