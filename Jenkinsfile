@@ -11,6 +11,13 @@ node {
    /* def JWT_KEY_CRED_ID ='45e2e7b2-665f-4244-967f-7d6cd4593ca8' */
    /* def CONNECTED_APP_CONSUMER_KEY='' */
 	
+     def HUB_ORG = HUB_ORG
+     def SFDC_HOST=SFDC_HOST
+     def JWT_KEY_CRED_ID=JWT_KEY_CRED_ID
+     def CONNECTED_APP_CONSUMER_KEY=CONNECTED_APP_CONSUMER_KEY
+	
+     echo "SFDC_HOST_DH is ${env.SFDC_HOST_DH}"
+	
 
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
